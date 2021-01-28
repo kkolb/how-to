@@ -27,7 +27,7 @@ If Node-RED was installed as a global npm package, run the following command to 
 
 `node-red` can take various arguments:
 
-`node-red [-v] [-?] [--settings settings.js] [--userDir DIR] [--port PORT] [--title TITLE] [--safe] [flows.json|projectName] [-D X=Y|@file]`
+`node-red [-v] [-?] [--settings settings.js] [--port PORT] [--title TITLE] [--safe] [flows.json|projectName]`
 
 | Option          | Description                                               |
 | --------------- | --------------------------------------------------------- |
