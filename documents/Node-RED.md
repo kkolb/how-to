@@ -4,26 +4,28 @@ Node-RED is an open-source flow-based programming tool with a visual editor that
 
 ## Installation
 
-#### Prerequisites
+### Prerequisites
 
 To install Node-RED locally you will need a supported version of Node.js.
 
-#### Installing
+### Installing
 
 `npm install -g --unsafe-perm node-red`
 will install Node-RED as a global module along with its dependencies (in Windows under %APPDATA%\npm\node_modules)
 
-#### Running
+### Running
 
-Once installed as a global module you can start Node-RED with the command `node-red` in your terminal. `Ctrl-C` stops Node-RED.
+`node-red` starts Node-RED  
+`ctrl-c` stops Node-RED  
+`.node-red` is the home folder in %HOMEPATH% for the Node-RED configuration for the current user.
 
-#### Upgrading Node-RED
+### Upgrading Node-RED
 
 If Node-RED was installed as a global npm package, run the following command to upgrade to the latest version:
 
 `npm install -g --unsafe-perm node-red`
 
-#### Command-line Usage
+### Command-line Usage
 
 `node-red` can take various arguments:
 

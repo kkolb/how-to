@@ -1,5 +1,42 @@
 # Git
 
+## Links
+
+- [Git Home](https://git-scm.com)
+- [git ignore](http://gitignore.io)
+
+## Git commands
+
+### Configuration
+
+git config --global user.name "K. Kolb"  
+git config --global user.email "kkolb@sit.de"  
+git config --global core.editor "code --wait"
+
+git config --list
+
+### Initialization
+
+git init  
+git status
+
+### Basic commands
+
+#### Add
+
+git add file1 file2  
+git add .
+
+#### Commit
+
+git commit -m "message"  
+git commit --amend
+
+#### Log
+
+git log  
+git log --oneline
+
 ### Git alias
 
 [alias]  
@@ -8,3 +45,15 @@ br = branch
 com = commit  
 st = status  
 lg = log --graph --color --abbrev-commit --date=format:'%Y-%m-%d %H:%M' --pretty=format:'%Cred%h%Creset %Cgreen%ad%Creset %C(cyan)%<(10,trunc)%aN%Creset %C(yellow)%d%Creset %s %Cgreen(%cr)%Creset'
+
+### Bash commands
+
+- cd
+- ls
+- pwd
+- open . (MAC)
+- start . (Windows)
+- touch tmp.txt
+- mkdir
+- rm tmp.txt
+- rm -rf folderToDelete
