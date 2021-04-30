@@ -5,9 +5,7 @@
 - [Git Home](https://git-scm.com)
 - [git ignore](http://gitignore.io)
 
-## Git commands
-
-### Configuration
+## Configuration
 
 git config --global user.name "K. Kolb"  
 git config --global user.email "kkolb@sit.de"  
@@ -15,27 +13,57 @@ git config --global core.editor "code --wait"
 
 git config --list
 
-### Initialization
+## Initialization
 
 git init  
 git status
 
-### Basic commands
+## Basic commands
 
-#### Add
+### Add
 
 git add file1 file2  
 git add .
 
-#### Commit
+### Commit
 
-git commit -m "message"  
+git commit -m "commit message"  
+git commit -a -m "commit message"
 git commit --amend
 
-#### Log
+### Log
 
 git log  
 git log --oneline
+
+### Branching
+
+git branch
+git branch -v
+git branch <branch-name>
+git branch -m <new branch-name>
+
+git switch <branch-name>
+git checkout <branch-name>
+
+git switch -c <branch-name>
+git checkout -b <branch-name>
+
+### Merging
+
+- Fast-Forward
+- Merge Commit
+
+git switch master
+git merge <branch-name>
+
+### Diff
+
+git diff
+git diff HEAD
+git diff --staged
+git diff branch1..branch2 [filename]
+git diff commit1..commit2 [filename]
 
 ### Git alias
 
