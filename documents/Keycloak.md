@@ -18,6 +18,11 @@ Enabling login with social networks is easy to add through the admin console. Ke
 - [Keycloak Docker Image](https://github.com/keycloak/keycloak-containers/blob/16.1.0/server/README.md)
 - [Install Keycloak on CentOS 7 with MySQL backend](https://www.pimwiddershoven.nl/entry/install-keycloak-on-centos-7-with-mysql-backend)
 
+Local standalone installation
+
+- [Keycloak Admin Console](http://localhost:8080/auth/admin)
+- [Keycloak Account Console for realm test](http://localhost:8080/auth/realms/test/account)
+
 ## Installation
 
 Keycloak installation options are
@@ -30,11 +35,40 @@ Keycloak installation options are
 - Kubernetes Operator
 - OpenShift Operator
 
-### Windows / Linux
+### Standalone Windows / Linux
 
 - OpenJDK 1.8 or newer installed.
 - download the zip-file for the latest version from the Keycloak website
 - extracting the zip-file
 - open a terminal in the keycloak directory and run the following command
-  > On Linux: `bin/standalone.sh`
+
+  > On Linux: `bin/standalone.sh`  
   > On Windows: `bin/standalone.bat`
+
+### Default ports
+
+| Protocol                 | Port |
+| ------------------------ | ---- |
+| ajp                      | 8009 |
+| http                     | 8080 |
+| https                    | 8443 |
+| management-http          | 9990 |
+| management-https         | 9993 |
+| txn-recovery-environment | 4712 |
+| txn-status-manager       | 4713 |
+
+In standalone mode they can be changed in
+
+> \standalone\configuration\standalone.xml
+
+### Next steps
+
+- open `http://localhost:8080/auth` and create an admin user
+- login to the admin console and login
+- create a realm
+- create a user
+- create credentilas for the user
+- login to account console
+
+A realm allows creating isolated groups of applications and users.  
+The default realm master is dedicated to manage Keycloak and should not be used for own applications.
